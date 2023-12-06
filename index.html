@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>Portfolio - Ryan Brosius</title>
 </head>
 
@@ -29,17 +32,30 @@
                     <li rel="#">
                         <a href="#" id="">Bleh Cat</a>
                 </ul>
+                <div id="burger" class="navbar-toggle" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </nav>
         </div>
     </header>
+    <nav class="mobile-nav nav-menu nav-tabs">
+        <a class="mobile-nav-active" href="/">About Me</a>
+        <a href="/projects.html" id="">Projects</a>
+        <a href="#" id="">More Stuff</a>
+        <a href="#" id="">Bleh Cat</a>
+    </nav>
 
-    <section id="body" style="display:block; height:100vh;">
-        <div class="container">
-            <header class="section-header">
-                <h3>About Me</h3>
-            </header>
+    <section id="body" style="display:block; min-height:100vh; height: auto">
+        <div class="container" style="margin-top: 50px;">
             <div class="row" id="contact-icon">
-                <div class="col-12 col-md-12">
+                <div>
+                    <div class="myNameIs">
+                        <h6>Hey there, my name is</h6>
+                        <h1>Ryan Brosius!</h1>
+                        <h3>CS Undergraduate - Concentration in Game Design/Development</h3>
+                    </div>
                     <p class="text-left">
                         <br>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum maxime veniam eligendi eum ea dolore pariatur delectus placeat inventore consequuntur at nesciunt perspiciatis voluptatibus animi, doloremque doloribus corrupti tempore quaerat.
@@ -120,7 +136,7 @@
                                         <li>Software Engineering </li>
                                         <li>Data Structures/Algorithms </li>
                                         <li>Object-Oriented Programming </li>
-                                        <li>Test Pipeline </li>
+                                        <li>Pipeline Testing </li>
                                     </ul>
                                 </div>
                             </div>
@@ -147,5 +163,15 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('burger');
+            var mobile_nav = document.querySelector('.mobile-nav')
+            menu.classList.toggle('show');
+            mobile_nav.classList.toggle('show');
+        }
+    </script>
+
 </body>
 </html>
