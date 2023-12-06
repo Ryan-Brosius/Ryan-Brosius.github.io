@@ -385,24 +385,73 @@ h1,h2,h3,h4,h5,h6 {
 .project-covers{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 100px;
+    padding-top: 40px;
     width: 100%;
     color: var(--text-color);
 }
 
 .project-display{
+    position: relative;
     clear: left;
     margin-left: 0;
     transition: 0.2 ease;
-    background-color: red;
-    width: 32%;
-    margin: 5px;
+    width: 33.3%;
+    padding: 5px;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .project-display {
+        width: 50%;
+    }
+}
+
+@media (max-width: 540px){
+    .project-display {
+        width: 100%;
+    }
+}
+
+.project-display:hover{
+    border: 5px solid var(--primary-color);
 }
 
 .project-display .title {
     text-align: center;
     margin: 0px;
     margin-left: 0px;
+}
+
+.project-display:hover {
+    .cover-image{
+        background-color: rgba(34, 34, 34, 0.9);
+        opacity: 30%;
+    }
+
+    .text-overlay{
+        display: block;
+    }
+}
+
+.project-display .text-overlay{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.project-display .text-overlay h6{
+    font-size: 14px;
+    margin-bottom: 13px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.project-display .text-overlay h1{
+    font-size: 19px;
+    color: var(--text-color);
 }
 
 .myNameIs {
