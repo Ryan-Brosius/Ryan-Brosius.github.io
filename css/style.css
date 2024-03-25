@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #00C6C1;
+    --primary-color: #39c5bb;
     --text-color: #fff;
     --background-color: #191b27;
 }
@@ -52,6 +52,13 @@ h1,h2,h3,h4,h5,h6 {
     right: 0;
     transition: all .5s;
     z-index: 997
+}
+
+#header.scrolled {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px 0;
+    height: 72px;
+    transition: all .5s;
 }
 
 #header #logo {
@@ -233,7 +240,7 @@ h1,h2,h3,h4,h5,h6 {
 
 #body {
     background: var(--background-color);;
-    padding: 60px 0 40px 0;
+    padding: 20px 0 40px 0;
     position: relative
 }
 
@@ -367,6 +374,11 @@ h1,h2,h3,h4,h5,h6 {
 
 #contact-icon .title a {
     color: var(--text-color);
+    text-decoration: none;
+}
+
+#contact-icon .title a:hover {
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -552,4 +564,49 @@ h1,h2,h3,h4,h5,h6 {
     .mobile-nav {
         display: none;
     }
+}
+
+.my-btn-outline-primary {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.my-btn-primary-active{
+    color: var(--text-color) !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.my-btn {
+    outline: none;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.2rem 0.5rem;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+.my-btn:hover {
+    color: var(--text-color) !important;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: .5s;
+}
+
+.my-btn:focus {
+    outline-style:none;
+}
+
+.button-container {
+    text-align: left;
+    margin-top: auto;
 }
