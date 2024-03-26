@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
     <title>Portfolio - Ryan Brosius</title>
 </head>
 
@@ -49,7 +50,7 @@
     <section id="body" style="display:block; min-height:100vh; height: auto">
         <div class="container" style="margin-top: 50px;">
             <div class="row" id="contact-icon">
-                <div>
+                <div class="container">
                     <div class="myNameIs">
                         <h6>Hey there, my name is</h6>
                         <h1>Ryan Brosius!</h1>
@@ -57,16 +58,22 @@
                     </div>
                     <p class="text-left">
                         <br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum maxime veniam eligendi eum ea dolore pariatur delectus placeat inventore consequuntur at nesciunt perspiciatis voluptatibus animi, doloremque doloribus corrupti tempore quaerat.
+                        Welcome to my portfolio website! I'm a Computer Science student at Drexel University, pursuing a Bachelor of Science degree with a 
+                        concentration in Game Design & Development and Artificial Intelligence & Machine Learning.
                         <br><br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum in quaerat quas illo vitae atque molestiae! Perspiciatis nulla unde aliquam commodi officiis tempora, asperiores ad, odit eum, dicta sit cum.
+                        I have always been facinated in creating my own games. My dream is to turn this passion into a career by helping to create 
+                        immersive engaging games and experiences. Alongside this, I have a big interest in AI & Machine Learning, 
+                        and I love learning more about the algorithms that make AI work. Lately, I've been really interested in graphics rendering and I 
+                        plan to do some projects in the near future involving openGL.
                         <br><br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum possimus consectetur inventore asperiores tenetur nam maxime laudantium corporis, nemo quaerat odit aliquam obcaecati reiciendis corrupti cupiditate adipisci nostrum explicabo ipsum?
+                        But enough about computer science! When I'm not programming, I'm a pretty big gamer, with Celeste being my favorite game. 
+                        I also enjoy playing guitar, leading adventures as a Dungeon Master in Dungeons & Dragons, and making my friends laugh.
                         <br><br>
+                        Take a look around my portfolio to see my projects, skills, and resume. Thanks for stopping by!
                 </div>
                 <br>
                 <div style="" class="container">
-                    <div class="row w-100 center" style="padding-top: 12px">
+                    <div class="row w-100 center info-containers" style="padding-top: 12px">
                         <div class="col-lg-4 col-md-6">
                             <div class="icon">
                                 <a href="https://www.linkedin.com/in/ryanbrosius/" target="_blank">
@@ -103,8 +110,8 @@
                     </div>
                     <br>
                     <br>
-                    <div class="row w-100" style="padding-top: 12px">
-                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="0.8s">
+                    <div class="row w-100 info-containers" style="padding-top: 12px">
+                        <div class="col-lg-4 col-md-6 box" data-wow-duration="0.8s">
                             <div class="icon">
                                 <i class="ion-social-python"></i>
                             </div>
@@ -123,7 +130,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="0.9s">
+                        <div class="col-lg-4 col-md-6 box" data-wow-duration="0.9s">
                             <div class="icon">
                                 <i class="ion-code"></i>
                             </div>
@@ -140,7 +147,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.0s">
+                        <div class="col-lg-4 col-md-6 box" data-wow-duration="1.0s">
                             <div class="icon">
                                 <i class="ion-social-tux"></i>
                             </div>
@@ -165,21 +172,6 @@
     </section>
 
     <script>
-        function toggleMenu() {
-            var menu = document.getElementById('burger');
-            var mobile_nav = document.querySelector('.mobile-nav')
-            menu.classList.toggle('show');
-            mobile_nav.classList.toggle('show');
-        }
-
-        window.addEventListener('scroll', function() {
-            var navbar = document.querySelector('#header');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
     </script>
 
 </body>
