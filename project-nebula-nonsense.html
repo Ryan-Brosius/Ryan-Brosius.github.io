@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Portfolio - Ryan Brosius</title>
+</head>
+
+<section id="body" style="display:block; min-height:100vh; height: auto;">
+    <header id="header">
+        <div class="container-fluid">
+            <div id="logo" class="pull-left">
+                <h1>
+                    <a href="/" id="Ryan" rel="#about">Ryan Brosius</a>
+                </h1>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu nav-tabs">
+                    <li rel="#about" id="nav-home">
+                        <a href="/">About Me</a>
+                    <li rel="#" class="menu-active">
+                        <a href="/projects.html" id="">Projects</a>
+                    <li rel="#">
+                        <a href="#" id="">More Stuff</a>
+                    <li rel="#">
+                        <a href="#" id="">Bleh Cat</a>
+                </ul>
+                <div id="burger" class="navbar-toggle" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <nav class="mobile-nav nav-menu nav-tabs">
+        <a href="/">About Me</a>
+        <a class="mobile-nav-active" href="/projects.html" id="">Projects</a>
+        <a href="#" id="">More Stuff</a>
+        <a href="#" id="">Bleh Cat</a>
+    </nav>
+
+    <section id="body" style="display:block;">
+        <div class="container projects-body">
+            <div class="project-header-container">
+                <h1>Nebula Nonsense</h1>
+                2D bullet hell game<br>
+                Made for the 2023 Secret Santa Game Jam<br>
+                Made using Unity and C#
+            </div>
+
+            <div class="container project-icons-container project-icons project-covers">
+                <!-- GITHUB -->
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="https://github.com/Ryan-Brosius/Secret-Santa-2023-Game-Jam">
+                            <i class="ion-social-github-outline"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="https://github.com/Ryan-Brosius/Secret-Santa-2023-Game-Jam">GitHub</a>
+                    </h4>
+                </div>
+
+                <!-- ITCHIO -->
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="https://tacocat122.itch.io/nebula-nonsense">
+                            <i class="ion-ios-game-controller-b"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="https://tacocat122.itch.io/nebula-nonsense">Itch.io</a>
+                    </h4>
+                </div>
+            </div>
+
+            This is a 2D bullet hell game I created with my friend from college for the 2023 Secret Santa Game Jam. For this game jam 
+            teams needed to create a game for their "giftee" with a prompt given to you from said giftee. I remember our giftee wanted a space themed game. 
+            This game created here was created in around a month and was worked on during my finals week of college. Which was very fun.
+            <br><br>
+            The game involves three bosses, each with four different attack patterns. There is also a score system which saves and displays the best score. 
+            Below you can watch the demo of the game, look at some of the pictures of development, and play the game on itch.io!
+
+            <h1>DEMO</h1>
+            <div class="row media-container">
+                <div class="col-12 col-md-12 raytrace">
+                    <video src="img/NebulaNonsense/nebula-demo.mp4" class="img-fluid" controls>
+                        <source src="img/NebulaNonsense/nebula-demo.mp4" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+
+            <h1>Bosses</h1>
+            <div class="row media-container">
+                <div class="col-12 col-md-4">
+                    <img src="img/NebulaNonsense/CatBoss.gif" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/NebulaNonsense/BunnyBoss.gif" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/NebulaNonsense/PlannetBoss.gif" class="img-fluid">
+                </div>
+            </div>
+
+            <h1>Code</h1>
+            <div class="row media-container">
+                <div class="col-12 col-md-6">
+                    <img src="img/NebulaNonsense/first boss code.png" class="img-fluid">
+                    <p>Bunny Boss Code</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="img/NebulaNonsense/level manager.png" class="img-fluid">
+                    <p>Level Manager</p>
+                </div>
+            </div>
+            <div class="row media-container">
+                <div class="col-12 col-md-12">
+                    <img src="img/NebulaNonsense/Scripts.PNG" class="img-fluid">
+                    <p>Scripts</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        
+        /*
+        window.onload = function() {
+            console.log("hey");
+            var gallery = document.querySelector('.calculate-smallest-height');
+            var images = gallery.querySelectorAll('img');
+            var smallestHeight = Math.min(...Array.from(images).map(img => img.clientHeight));
+            images.forEach(img => img.style.maxHeight = smallestHeight + 'px');
+        }; */
+    </script>
+</body>
+</html>

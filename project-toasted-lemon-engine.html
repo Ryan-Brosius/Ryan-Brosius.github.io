@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Portfolio - Ryan Brosius</title>
+</head>
+
+<section id="body" style="display:block; min-height:100vh; height: auto;">
+    <header id="header">
+        <div class="container-fluid">
+            <div id="logo" class="pull-left">
+                <h1>
+                    <a href="/" id="Ryan" rel="#about">Ryan Brosius</a>
+                </h1>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu nav-tabs">
+                    <li rel="#about" id="nav-home">
+                        <a href="/">About Me</a>
+                    <li rel="#" class="menu-active">
+                        <a href="/projects.html" id="">Projects</a>
+                    <li rel="#">
+                        <a href="#" id="">More Stuff</a>
+                    <li rel="#">
+                        <a href="#" id="">Bleh Cat</a>
+                </ul>
+                <div id="burger" class="navbar-toggle" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <nav class="mobile-nav nav-menu nav-tabs">
+        <a href="/">About Me</a>
+        <a class="mobile-nav-active" href="/projects.html" id="">Projects</a>
+        <a href="#" id="">More Stuff</a>
+        <a href="#" id="">Bleh Cat</a>
+    </nav>
+
+    <section id="body" style="display:block;">
+        <div class="container projects-body">
+            <div class="project-header-container">
+                <h1>Toasted Lemon Engine</h1>
+                Game Engine<br>
+                Created using C++ and SDL2
+            </div>
+            
+            <div class="container project-icons-container project-icons project-covers">
+                <!-- GITHUB -->
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="https://github.com/Ryan-Brosius/Toasted_Lemon_Engine">
+                            <i class="ion-social-github-outline"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="https://github.com/Ryan-Brosius/Toasted_Lemon_Engine">GitHub</a>
+                    </h4>
+                </div>
+            </div>
+
+            <h1>What is Toasted Lemon Engine?</h1>
+            Toasted Lemon Engine is a retro-inspired 2D game engine created in C++ utilizing the SDL2 library.
+            During this 3-month project I worked with two other programmers who helped me refine this game engine.
+            <br><br>
+            My role in the game engine was to create the rendering engine, animation engine, sprite mapping tools, sprite atlassing tools, and scripting with game objects.
+            I also helped a lot to get the networking engine working with out engine.
+            I am happy with how our engine turned out and hope to work with 3D graphics in the future!
+
+            <h1>DEMO</h1>
+            <div class="row media-container">
+                <div class="col-12 col-md-12 raytrace">
+                    <video src="img/ToastedLemonEngine/engine-demo.mp4" class="img-fluid" controls>
+                        <source src="img/ToastedLemonEngine/engine-demo.mp4" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+
+            The demo of our game engine turned out pretty well, and I am specfically happy with how the graphics rendering turned out.
+            There were more than a few bugs that we had to iron out during development, but we were able to squash them and produce an engine that can support
+            well over 500+ draw calls from my testing. Not included in the demo, the rendering engine supports image scaling, rotation, and flipping on the axis.
+            
+            <h1>Diagram & Code</h1>
+            <div class="row media-container" style="margin-bottom: 10px;">
+                <div class="col-12 col-md-6">
+                    <img src="img/ToastedLemonEngine/architecture-diagram.png" class="img-fluid">
+                    <p> Diagram of Engine </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="img/ToastedLemonEngine/main-loop-code.png" class="img-fluid">
+                    <p> Engine Main Game Loop </p>
+                </div>
+            </div>
+            <div class="row media-container">
+                <div class="col-12 col-md-6">
+                    <img src="img/ToastedLemonEngine/draw-code.png" class="img-fluid">
+                    <p> Rendering Engine Drawing to Buffer </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="img/ToastedLemonEngine/animation-code.png" class="img-fluid">
+                    <p> Animation Engine </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script>
+    </script>
+</body>
+</html>

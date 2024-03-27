@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Portfolio - Ryan Brosius</title>
+</head>
+
+<section id="body" style="display:block; min-height:100vh; height: auto;">
+    <header id="header">
+        <div class="container-fluid">
+            <div id="logo" class="pull-left">
+                <h1>
+                    <a href="/" id="Ryan" rel="#about">Ryan Brosius</a>
+                </h1>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu nav-tabs">
+                    <li rel="#about" id="nav-home">
+                        <a href="/">About Me</a>
+                    <li rel="#" class="menu-active">
+                        <a href="/projects.html" id="">Projects</a>
+                    <li rel="#">
+                        <a href="#" id="">More Stuff</a>
+                    <li rel="#">
+                        <a href="#" id="">Bleh Cat</a>
+                </ul>
+                <div id="burger" class="navbar-toggle" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <nav class="mobile-nav nav-menu nav-tabs">
+        <a href="/">About Me</a>
+        <a class="mobile-nav-active" href="/projects.html" id="">Projects</a>
+        <a href="#" id="">More Stuff</a>
+        <a href="#" id="">Bleh Cat</a>
+    </nav>
+
+    <section id="body" style="display:block;">
+        <div class="container projects-body">
+            <div class="project-header-container">
+                <h1>Lethal Company Mods</h1>
+                Mods for <a href="https://store.steampowered.com/app/1966720/Lethal_Company/">Lethal Company</a> <br>
+                Developed using C#, .NET, Unity, and Blender
+            </div>
+            
+            <div class="container project-icons-container project-icons project-covers">
+                <!-- GITHUB -->
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="https://github.com/Ryan-Brosius/Hololive_LethalCompany_ModelReplacements">
+                            <i class="ion-social-github-outline"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="https://github.com/Ryan-Brosius/Hololive_LethalCompany_ModelReplacements">GitHub</a>
+                    </h4>
+                </div>
+
+                <!-- OTHER -->
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="https://thunderstore.io/c/lethal-company/p/Tacocat12/?section=asset-replacements&ordering=most-downloaded">
+                            <i class="ion-ios-paper-outline"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="https://thunderstore.io/c/lethal-company/p/Tacocat12/?section=asset-replacements&ordering=most-downloaded">Thunderstore</a>
+                    </h4>
+                </div>
+            </div>
+
+            When Lethal Company came out on steam I was a really big fan. I decided that I wanted to import some funny characters into the game 
+            for my friends and I. With the help of the LC <a href="https://github.com/BunyaPineTree/LethalCompany_ModelReplacementAPI">model replacement API</a> 
+            I was able to mod some character replacements into the game. I was also at one point helping the main dev of the API find bugs and fix them on discord.
+            <br><br>
+            Below are a few screenshots of me setting up a character to import into lethal company. To import a character (or multiple) you need to build them 
+            into an asset bundle that can be injected into the game. I also needed to fix and model bugs, rig them, add their textures, and add jiggle bones for fun. 
+            Here is also some of the code I wrote which allows us to inject the models into the game.
+
+            <h1>Mods I've Created</h1>
+            <div class="row media-container">
+                <div class="col-12 col-md-12">
+                    <img src="img/LCmodding/modPage.PNG" class="img-fluid">
+                    <p>Over 100k total downloads wow!</p>
+                </div>
+            </div>
+
+            <h1>Setting Up a Character For an Asset Bundle</h1>
+            <div class="row media-container">
+                <div class="col-12 col-md-6">
+                    <img src="img/LCmodding/modelRigging.png" class="img-fluid">
+                    <p>Rigging Model</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="img/LCmodding/modelAssetBundle.png" class="img-fluid">
+                    <p>Preparing model for asset bundle</p>
+                </div>
+            </div>
+
+            <h1>Character Models in Game</h1>
+            <div class="row media-container">
+                <div class="col-12 col-md-6">
+                    <img src="img/LCmodding/modelExample1.png" class="img-fluid">
+                    <p>Models with post-processing disabled</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="img/LCmodding/modelExample2.png" class="img-fluid">
+                    <p>Models with post-processing enabled</p>
+                </div>
+            </div>
+
+            <h1>Code</h1>
+            <div class="row media-container">
+                <div class="col-12 col-md-6">
+                    <img src="img/LCmodding/APIinjection.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="img/LCmodding/modelSetup.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    </script>
+</body>
+</html>

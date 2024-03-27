@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Portfolio - Ryan Brosius</title>
+</head>
+
+<section id="body" style="display:block; min-height:100vh; height: auto;">
+    <header id="header">
+        <div class="container-fluid">
+            <div id="logo" class="pull-left">
+                <h1>
+                    <a href="/" id="Ryan" rel="#about">Ryan Brosius</a>
+                </h1>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu nav-tabs">
+                    <li rel="#about" id="nav-home">
+                        <a href="/">About Me</a>
+                    <li rel="#" class="menu-active">
+                        <a href="/projects.html" id="">Projects</a>
+                    <li rel="#">
+                        <a href="#" id="">More Stuff</a>
+                    <li rel="#">
+                        <a href="#" id="">Bleh Cat</a>
+                </ul>
+                <div id="burger" class="navbar-toggle" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <nav class="mobile-nav nav-menu nav-tabs">
+        <a href="/">About Me</a>
+        <a class="mobile-nav-active" href="/projects.html" id="">Projects</a>
+        <a href="#" id="">More Stuff</a>
+        <a href="#" id="">Bleh Cat</a>
+    </nav>
+
+    <section id="body" style="display:block;">
+        <div class="container projects-body">
+            <div class="project-header-container">
+                <h1>[project title here]</h1>
+                extra stuff :3
+            </div>
+
+            <div class="container project-icons-container project-icons project-covers">
+                <!-- GITHUB -->
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="">
+                            <i class="ion-social-github-outline"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="">GitHub</a>
+                    </h4>
+                </div>
+
+                <!-- DEVPOST -->
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="">
+                            <i class="ion-link"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="">DevPost</a>
+                    </h4>
+                </div>
+
+                <!-- ITCHIO -->
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="">
+                            <i class="ion-ios-game-controller-b"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="">Itch.io</a>
+                    </h4>
+                </div>
+
+                <!-- OTHER -->
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="">
+                            <i class="ion-ios-paper-outline"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="">Other</a>
+                    </h4>
+                </div>
+            </div>
+
+            <h1>This is a header</h1>
+            hey this is text under it<br>
+            you can type stuff<br>
+            and its pretty cool I guess<br>
+            you can like explain a project here<br>
+            or something I guess<br>
+
+            <h1>These are images in a row of three</h1>
+            <div class="row media-container">
+                <div class="col-12 col-md-4">
+                    <img src="img/image2.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/image2.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/image1.jpg" class="img-fluid">
+                </div>
+            </div>
+            <br>
+
+            <h1>These are images in a row of two</h1>
+            <div class="row media-container">
+                <div class="col-12 col-md-6">
+                    <img src="img/image1.jpg" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="img/image1.jpg" class="img-fluid">
+                </div>
+            </div>
+
+            <h1>These are images in a row of one lol</h1>
+            <div class="row media-container">
+                <div class="col-12 col-md-12">
+                    <img src="img/image1.jpg" class="img-fluid">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script>
+        
+        /*
+        window.onload = function() {
+            console.log("hey");
+            var gallery = document.querySelector('.calculate-smallest-height');
+            var images = gallery.querySelectorAll('img');
+            var smallestHeight = Math.min(...Array.from(images).map(img => img.clientHeight));
+            images.forEach(img => img.style.maxHeight = smallestHeight + 'px');
+        }; */
+    </script>
+</body>
+</html>
