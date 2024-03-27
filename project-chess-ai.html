@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Portfolio - Ryan Brosius</title>
+</head>
+
+<section id="body" style="display:block; min-height:100vh; height: auto;">
+    <header id="header">
+        <div class="container-fluid">
+            <div id="logo" class="pull-left">
+                <h1>
+                    <a href="/" id="Ryan" rel="#about">Ryan Brosius</a>
+                </h1>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu nav-tabs">
+                    <li rel="#about" id="nav-home">
+                        <a href="/">About Me</a>
+                    <li rel="#" class="menu-active">
+                        <a href="/projects.html" id="">Projects</a>
+                    <li rel="#">
+                        <a href="#" id="">More Stuff</a>
+                    <li rel="#">
+                        <a href="#" id="">Bleh Cat</a>
+                </ul>
+                <div id="burger" class="navbar-toggle" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <nav class="mobile-nav nav-menu nav-tabs">
+        <a href="/">About Me</a>
+        <a class="mobile-nav-active" href="/projects.html" id="">Projects</a>
+        <a href="#" id="">More Stuff</a>
+        <a href="#" id="">Bleh Cat</a>
+    </nav>
+
+    <section id="body" style="display:block;">
+        <div class="container projects-body">
+            <div class="project-header-container">
+                <h1>Chess AI</h1>
+                Chess Engine<br>
+                Developed in Python with Pygames
+            </div>
+                
+            <div class="container project-icons-container project-icons project-covers">
+                <!-- GITHUB -->
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="https://github.com/Ryan-Brosius/Basic-Chess-AI">
+                            <i class="ion-social-github-outline"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="https://github.com/Ryan-Brosius/Basic-Chess-AI">GitHub</a>
+                    </h4>
+                </div>
+            </div>
+
+            I developed this basic chess engine during my summer break of freshman year of college. It was a fun project and it was my first real experience 
+            for developing my first AI. I also learned how graphics worked using the Pygames library. Overall turned out to be a fun project.
+            <br><br>
+            In this engine I implimented being able to play with another human, and being able to play against an AI. I first implimented the minimax algorithm 
+            and later on implimented alpha-beta pruning. I also developed a simple board ranking system to help the AI determine the best move. I also made it
+            so the player can open up a menu to see how good the board ranking is after each move made.
+            <br><br>
+
+            <div class="row media-container">
+                <div class="col-12 col-md-6">
+                    <img src="img/ChessAI/ChessAIBoardRanking2.png" class="img-fluid">
+                    <p>Player making a move</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="img/ChessAI/ChessAIBoardRanking1.png" class="img-fluid">
+                    <p>Board rating after a poor move</p>
+                </div>
+            </div>
+
+            <div class="row media-container">
+                <div class="col-12 col-md-4">
+                    <img src="img/ChessAI/MainLoopCode.png" class="img-fluid">
+                    <p>Main engine loop</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/ChessAI/gameStateClass.png" class="img-fluid">
+                    <p>Board game state class</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/ChessAI/AlphaBetaPruning.png" class="img-fluid">
+                    <p>Alpha-beta pruning algorithm</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+    </script>
+</body>
+</html>

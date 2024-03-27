@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Portfolio - Ryan Brosius</title>
+</head>
+
+<section id="body" style="display:block; min-height:100vh; height: auto;">
+    <header id="header">
+        <div class="container-fluid">
+            <div id="logo" class="pull-left">
+                <h1>
+                    <a href="/" id="Ryan" rel="#about">Ryan Brosius</a>
+                </h1>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu nav-tabs">
+                    <li rel="#about" id="nav-home">
+                        <a href="/">About Me</a>
+                    <li rel="#" class="menu-active">
+                        <a href="/projects.html" id="">Projects</a>
+                    <li rel="#">
+                        <a href="#" id="">More Stuff</a>
+                    <li rel="#">
+                        <a href="#" id="">Bleh Cat</a>
+                </ul>
+                <div id="burger" class="navbar-toggle" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <nav class="mobile-nav nav-menu nav-tabs">
+        <a href="/">About Me</a>
+        <a class="mobile-nav-active" href="/projects.html" id="">Projects</a>
+        <a href="#" id="">More Stuff</a>
+        <a href="#" id="">Bleh Cat</a>
+    </nav>
+
+    <section id="body" style="display:block;">
+        <div class="container projects-body">
+            <div class="project-header-container">
+                <h1>Gun Jump</h1>
+                2D Platformer<br>
+                First game I worked on with a team!<br>
+                Developed in Unity using C#
+            </div>
+                
+            Gun Jump was the first game I made with a group during my freshman year of college. My lead role was a developer where I learned to 
+            develop the movement and interaction of the game environment.
+            <br><br>
+            This was the first time I programmed for a game throughout a long period of time. And allthough it has its flaws, I like to keep this game
+            a reminder of how far I have come as a programmer & game developer.
+            <br><br>
+            Unfortunately the repo no longer exists as my college took it down, but I do have a demo and a few photos below.
+
+            <h1>DEMO</h1>
+            <div class="row media-container">
+                <div class="col-12 col-md-12 raytrace">
+                    <video src="img/GunJump/gunjump Demo.mp4" class="img-fluid" controls>
+                        <source src="img/GunJump/gunjump Demo.mp4" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+
+            <div class="row media-container">
+                <div class="col-12 col-md-6">
+                    <img src="img/GunJump/level 1 preview.png" class="img-fluid">
+                    <p>Level 1</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="img/GunJump/shoot w mouse.png" class="img-fluid">
+                    <p>Shooting Gun Logic</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+    </script>
+</body>
+</html>

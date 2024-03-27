@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Portfolio - Ryan Brosius</title>
+</head>
+
+<section id="body" style="display:block; min-height:100vh; height: auto;">
+    <header id="header">
+        <div class="container-fluid">
+            <div id="logo" class="pull-left">
+                <h1>
+                    <a href="/" id="Ryan" rel="#about">Ryan Brosius</a>
+                </h1>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu nav-tabs">
+                    <li rel="#about" id="nav-home">
+                        <a href="/">About Me</a>
+                    <li rel="#" class="menu-active">
+                        <a href="/projects.html" id="">Projects</a>
+                    <li rel="#">
+                        <a href="#" id="">More Stuff</a>
+                    <li rel="#">
+                        <a href="#" id="">Bleh Cat</a>
+                </ul>
+                <div id="burger" class="navbar-toggle" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <nav class="mobile-nav nav-menu nav-tabs">
+        <a href="/">About Me</a>
+        <a class="mobile-nav-active" href="/projects.html" id="">Projects</a>
+        <a href="#" id="">More Stuff</a>
+        <a href="#" id="">Bleh Cat</a>
+    </nav>
+
+    <section id="body" style="display:block;">
+        <div class="container projects-body">
+            <div class="project-header-container">
+                <h1>Wings of Harmony</h1>
+                2D Musical Game<br>
+                Created in Unity using C#
+            </div>
+
+            <div class="container project-icons-container project-icons project-covers">
+                <!-- ITCHIO -->
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="https://tacocat122.itch.io/wingsofharmony">
+                            <i class="ion-ios-game-controller-b"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="https://tacocat122.itch.io/wingsofharmony">Itch.io</a>
+                    </h4>
+                </div>
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="https://drive.google.com/file/d/1WlZAkBXLFsI34Pl417sMlSAEW1AJizWT/view?usp=sharing">
+                            <i class="ion-ios-paper-outline"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="https://drive.google.com/file/d/1WlZAkBXLFsI34Pl417sMlSAEW1AJizWT/view?usp=sharing">GDD</a>
+                    </h4>
+                </div>
+            </div>
+                
+            This is a 2D musical rhythm-like game that I worked on with 3 other artists. I was the lead programmer of the project and it was my job to understand and 
+            program the team vision. Our idea was to create a rhythm game that helped teach and play songs. To do this, you play as a bird flying through the sky 
+            and you collect the correct note to play a tune. Once you collect all the notes for a level you play the tune at the end. And if you correctly collected 
+            all of the notes you proceded to the next level.
+            <br><br>
+            Below are some screenshots of the game and code to go along with it. The GDD is also included, which I also contributed to.
+
+            <h1>Gameplay Screenshots</h1>
+            <div class="row media-container">
+                <div class="col-12 col-md-4">
+                    <img src="img/WingsOfHarmony/gameplay 1.png" class="img-fluid">
+                    <p>Title Screen</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/WingsOfHarmony/gameplay 2.png" class="img-fluid">
+                    <p>Gameplay</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/WingsOfHarmony/gameplay 3.png" class="img-fluid">
+                    <p>Successfully completing a level</p>
+                </div>
+            </div>
+
+            I worked on a few different systems for this game. I developed a dynamic level loader to help stream-line the process of creating levels in out game. 
+            I created the movement for notes and the player. Developed the level manager, and saving the notes to use them across scenes.
+
+            <h1>Code & Features</h1>
+            <div class="row media-container">
+                <div class="col-12 col-md-4">
+                    <img src="img/WingsOfHarmony/levelloader.png" class="img-fluid">
+                    <p>Level Manager</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/WingsOfHarmony/note movement.png" class="img-fluid">
+                    <p>Note Movement</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/WingsOfHarmony/note storage ex.PNG" class="img-fluid">
+                    <p>Dynamic Level Creator</p>
+                </div>
+            </div>
+            <div class="row media-container">
+                <div class="col-12 col-md-12">
+                    <img src="img/WingsOfHarmony/Scripts.PNG" class="img-fluid">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+    </script>
+</body>
+</html>

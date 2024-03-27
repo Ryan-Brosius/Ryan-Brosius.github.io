@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Portfolio - Ryan Brosius</title>
+</head>
+
+<section id="body" style="display:block; min-height:100vh; height: auto;">
+    <header id="header">
+        <div class="container-fluid">
+            <div id="logo" class="pull-left">
+                <h1>
+                    <a href="/" id="Ryan" rel="#about">Ryan Brosius</a>
+                </h1>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu nav-tabs">
+                    <li rel="#about" id="nav-home">
+                        <a href="/">About Me</a>
+                    <li rel="#" class="menu-active">
+                        <a href="/projects.html" id="">Projects</a>
+                    <li rel="#">
+                        <a href="#" id="">More Stuff</a>
+                    <li rel="#">
+                        <a href="#" id="">Bleh Cat</a>
+                </ul>
+                <div id="burger" class="navbar-toggle" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <nav class="mobile-nav nav-menu nav-tabs">
+        <a href="/">About Me</a>
+        <a class="mobile-nav-active" href="/projects.html" id="">Projects</a>
+        <a href="#" id="">More Stuff</a>
+        <a href="#" id="">Bleh Cat</a>
+    </nav>
+
+    <section id="body" style="display:block;">
+        <div class="container projects-body">
+            <div class="project-header-container">
+                <h1>GAT</h1>
+                Gestural Artificial-Intelligence Technology<br>
+                Javascript application used to detect sign language<br>
+                Winner of the "Freshmen Challenge" and "Gestural Interface for Web Design" at Philly Codefest 2022<br>
+                Developed using Javascript, Tensorflow, OpenCV, Python, and React
+            </div>
+
+            <div class="container project-icons-container project-icons project-covers">
+                <!-- GITHUB -->
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="https://github.com/dalu-ao/GAT-GesturalArtificial-IntelligenceTechnology">
+                            <i class="ion-social-github-outline"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="https://github.com/dalu-ao/GAT-GesturalArtificial-IntelligenceTechnology">GitHub</a>
+                    </h4>
+                </div>
+                
+                <!-- DEVPOST -->
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="https://devpost.com/software/gesture-ai">
+                            <i class="ion-link"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="https://devpost.com/software/gesture-ai">DevPost</a>
+                    </h4>
+                </div>
+
+                <!-- WEBSITE -->
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="https://dalu-ao.github.io/GAT-GesturalArtificial-IntelligenceTechnology/">
+                            <i class="ion-ios-paper-outline"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="https://dalu-ao.github.io/GAT-GesturalArtificial-IntelligenceTechnology/">Test Website</a>
+                    </h4>
+                </div>
+            </div>
+                
+            GAT is a Javascript/Python application I and two others developed for the 2022 Philly Codefest. We wanted to build an application that
+            would incorperate sign language into websites. So using Tensorflow and OpenCV we developed a simple machine learning application that
+            does this.
+            <br><br>
+            We were able to use this to send messages through a mock social media website using sign language. My role was a backend developer who worked
+            on getting the API set up and teaching the model some sign language. I was get our application to work with 4 different sign languages And
+            hook it up to our mock website.
+
+            <h1>DEMO</h1>
+            <div class="row media-container">
+                <div class="col-12 col-md-12 raytrace">
+                    <video src="img/GAT/GAT Demonstration.mp4" class="img-fluid" controls>
+                        <source src="img/GAT/GAT Demonstration.mp4" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+
+            <div class="row media-container">
+                <div class="col-12 col-md-4">
+                    <img src="img/GAT/javacode1.png" class="img-fluid">
+                    <p>Javascript hand tracking API code</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/GAT/pythoncode1.png" class="img-fluid">
+                    <p>Python hand tracking code</p>
+                    <p></p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/GAT/pythoncode2.png" class="img-fluid">
+                    <p>Actions coded using the Python API</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+    </script>
+</body>
+</html>
