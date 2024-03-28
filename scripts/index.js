@@ -15,5 +15,5 @@ window.addEventListener('scroll', function() {
 });
 
 $(function(){
-    $('#header').load("/header.html");
+    $('#header').load("includes/header.html");
 });
