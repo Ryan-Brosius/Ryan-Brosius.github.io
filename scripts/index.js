@@ -13,3 +13,7 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('scrolled');
     }
 });
+
+$(function(){
+    $('#header').load("header.html");
+});
