@@ -15,5 +15,20 @@ window.addEventListener('scroll', function() {
 });
 
 $(function(){
-    $('#header').load("includes/header.html");
+    $('#header').load("includes/header.html", function() {
+        var tabs = document.querySelectorAll('.nav-focus');
+        var mobile_tabs = document.querySelectorAll('.nav-focus-mobile');
+
+        tabs.forEach(function(tab) {
+            if (window.location.href.includes(tab.getAttribute('href'))) {
+                tab.classList.add('menu-active');
+            }
+        });
+
+        mobile_tabs.forEach(function(tab) {
+            if (window.location.href.includes(tab.getAttribute('href'))) {
+                tab.classList.add('mobile-nav-active');
+            }
+        });
+    });
 });
