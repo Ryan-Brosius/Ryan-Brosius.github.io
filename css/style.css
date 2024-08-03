@@ -415,7 +415,7 @@ h1,h2,h3,h4,h5,h6 {
     overflow: hidden;
     position: relative;
     clear: left;
-    transition: opacity 0.3s ease, transform 0.3s ease, flex 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease, flex 0.3s ease, width 0.3s ease, height 0.3s ease;
     width: 33.3%;
     text-align: center;
     opacity: 1;
@@ -426,8 +426,7 @@ h1,h2,h3,h4,h5,h6 {
     opacity: 0; /* Make the div transparent */
     pointer-events: none; /* Prevents click events on the hidden div */
     transform: scale(.95);
-    /*width: 0;
-    height: 0;*/
+    width: 0;
 }
 
 
