@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Portfolio - Ryan Brosius</title>
+</head>
+
+<section id="body" style="display:block; min-height:100vh; height: auto;">
+    <div id="header"></div>
+
+    <section id="body" style="display:block;">
+        <div class="container projects-body">
+            <div class="project-header-container">
+                <h1>OpenGL Doom-Style Engine</h1>
+                Game Engine<br>
+                Created using C++ and openGL
+            </div>
+            
+            <div class="container project-icons-container project-icons project-covers">
+                <!-- GITHUB -->
+                <div class="project-icons">
+                    <div class="icon">
+                        <a href="https://github.com/Ryan-Brosius/openGL-Doom-Engine">
+                            <i class="ion-social-github-outline"></i>
+                        </a>
+                    </div>
+                    <h4 class="title">
+                        <a href="https://github.com/Ryan-Brosius/openGL-Doom-Engine">GitHub</a>
+                    </h4>
+                </div>
+            </div>
+
+            <h1>What is this rendering engine?</h1>
+            This openGL Engine is an engine inspired by the classic DOOM. I wanted to create a simple rendering engine to help me learn the structure of how to use
+            OpenGL. Ever since I created my first engine which was a 2D engine, I have been really facinated with Graphics. Expecially 3D graphics!
+            <br><br>
+            I have learned a lot while working on this rendering engine. I learned how to use GLSL, map textures onto surfaces, how to auto triangulate simple polygons,
+            different shading techniques, how lighting works, and much much more. Im happy with my learning progress and would like to continue working with Graphics
+            when I graduate if possible. Below are some of the tests I was running on my graphics engine if you would like to see below!
+            
+            <h1>Texture & Triangulation</h1>
+            <div class="row media-container" style="margin-bottom: 10px;">
+                <div class="col-12 col-md-6">
+                    <img src="img/openGLEngine/engine wall test gif.gif" class="img-fluid">
+                    <p> Engine test using ear clipping and texture wrapping </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="img/openGLEngine/texture bezier test gif.gif" class="img-fluid">
+                    <p> Texture wrapping on a bezier surface </p>
+                </div>
+            </div>
+
+            <div class="row media-container">
+                <div class="col-12 col-md-4">
+                    <img src="img/openGLEngine/flat shading test gif.gif" class="img-fluid">
+                    <p> Flat shading normal test </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/openGLEngine/gouraud bunny gif.gif" class="img-fluid">
+                    <p> Gouraud shading </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/openGLEngine/phong bunny gif.gif" class="img-fluid">
+                    <p> Phong shading </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script>
+    </script>
+</body>
+</html>
