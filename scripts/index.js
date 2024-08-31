@@ -20,6 +20,7 @@ $(function(){
         var mobile_tabs = document.querySelectorAll('.nav-focus-mobile');
 
         tabs.forEach(function(tab) {
+            console.log(tab.getAttribute('href'));
             if (window.location.href.includes(tab.getAttribute('href'))) {
                 tab.classList.add('menu-active');
             }
